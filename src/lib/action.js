@@ -54,7 +54,8 @@ export const handleGithubLogout = async () => {
   try {
     await signOut({
       redirect: false,
-      callbackUrl: "http://localhost:3000",
+      // callbackUrl: "http://localhost:3000",
+      callbackUrl: "https://main--kanooniastra.netlify.app/",
     });
   } catch (error) {
     console.error("Error during logout:", error);
