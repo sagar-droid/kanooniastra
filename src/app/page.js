@@ -6,7 +6,7 @@ import TrustedBy from "@/component/trustedBy/TrustedBy";
 
 const Home = () => {
   return (
-    <div>
+    <div className=" overflow-x-hidden">
       <HeroComponent />
       <AboutUs />
       <Services />

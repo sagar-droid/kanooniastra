@@ -8,7 +8,7 @@ import Image from "next/image";
 // };
 const PostUser = async ({ userId }) => {
   const user = await getUser(userId);
-  console.log(user);
+  // console.log(user);
   return (
     <div className=" flex justify-center items-center gap-4 ">
       <div className="w-[40px] h-[40px] overflow-hidden rounded-full flex items-center justify-center">
