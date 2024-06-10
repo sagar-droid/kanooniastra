@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { connectToDb } from "../../../../utils/connectToDb";
-import { Post } from "../../../../utils/models";
+import { connectToDb } from "../../../../../utils/connectToDb";
+import { Post } from "../../../../../utils/models";
 
 export const GET = async (request, { params }) => {
   const { slug } = params;
