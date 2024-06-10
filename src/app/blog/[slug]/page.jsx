@@ -12,7 +12,7 @@ import { Suspense } from "react";
 
 const getData = async () => {
   try {
-    const res = await axios.get(`http://localhost:3000/api//blog/${slug}`);
+    const res = await axios.get(`http://localhost:3000/api/blog/${slug}`);
     return res.data;
   } catch (error) {
     console.error("Failed to fetch data:", error);
