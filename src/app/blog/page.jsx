@@ -6,7 +6,9 @@ import axios from "axios";
 
 const getData = async () => {
   try {
-    const res = await axios.get("http://localhost:3000/api/blog");
+    const res = await axios.get(
+      "https://main--kanooniastra.netlify.app//api/blog"
+    );
     return res.data;
   } catch (error) {
     console.error("Failed to fetch data:", error);
