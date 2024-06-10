@@ -22,7 +22,7 @@ const Navbar = async () => {
           />
         </Link>
       </div>
-      <div>
+      <div className=" flex items-center justify-center">
         <Links session={session} />
       </div>
     </div>

@@ -17,7 +17,7 @@ const PostCard = ({ post }) => {
             />
           )}
           <span className="text-[12px] -rotate-90 flex items-center justify-center">
-            {post?.createdAt?.toString().slice(4, 16)}
+            {post?.createdAt?.toString().slice(3, 16)}
           </span>
         </div>
       </div>
