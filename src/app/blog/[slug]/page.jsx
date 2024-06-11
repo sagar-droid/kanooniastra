@@ -13,8 +13,8 @@ import { Suspense } from "react";
 const getData = async () => {
   try {
     const res = await axios.get(
-      // `https://main--kanooniastra.netlify.app/api/blog/${slug}`
-      `http://localhost:3000/api/blog/${slug}`
+      `https://main--kanooniastra.netlify.app/api/blog/${slug}`
+      // `http://localhost:3000/api/blog/${slug}`
     );
     return res.data;
   } catch (error) {
