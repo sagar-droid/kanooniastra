@@ -6,12 +6,17 @@ import "slick-carousel/slick/slick-theme.css";
 import "./trusteby.css";
 
 // Import your images
-import image1 from "../../../public/images/logo.png";
+import image1 from "../../../public/images/brand1.jpg";
+import image2 from "../../../public/images/brand2.jpg";
+import image3 from "../../../public/images/brand3.jpg";
+import image4 from "../../../public/images/brand4.jpg";
+import image5 from "../../../public/images/brand5.jpg";
+import image6 from "../../../public/images/brand6.jpg";
 import Image from "next/image";
 
 class TrustedBy extends Component {
   render() {
-    const images = [image1, image1, image1, image1];
+    const images = [image1, image2, image3, image4, image5, image6];
 
     const settings = {
       dots: false,
@@ -45,7 +50,10 @@ class TrustedBy extends Component {
 
     return (
       <section className="p-24 flex flex-col justify-center items-center gap-10">
-        <h2 className="flex justify-center items-center text-3xl uppercase tracking-wide">
+        <h2
+          className="flex justify-center items-center text-3xl uppercase tracking-wide"
+          data-aos="fade-up"
+          data-aos-once="true">
           Trusted By
         </h2>
         <Slider
@@ -58,7 +66,7 @@ class TrustedBy extends Component {
                 alt={`Image ${index + 1}`}
                 width={200}
                 height={200}
-                className="w-[100px] h-[100px]"
+                className="min-w-[250px] h-[200px]"
               />
             </div>
           ))}

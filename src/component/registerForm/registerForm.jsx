@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import styles from "./registerForm.module.css";
 import Link from "next/link";
 import { useFormState } from "react-dom";
-import { register } from "@/lib/action";
+import { register } from "../../lib/action";
 
 const RegisterForm = () => {
   const [state, formAction] = useFormState(register, undefined);

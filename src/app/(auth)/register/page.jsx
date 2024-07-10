@@ -1,5 +1,5 @@
-import RegisterForm from "@/component/registerForm/registerForm";
-import { register } from "@/lib/action";
+import RegisterForm from "../../../component/registerForm/registerForm";
+// import { register } from "@/lib/action";
 import React from "react";
 
 const Register = () => {

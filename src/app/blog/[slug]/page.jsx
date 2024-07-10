@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { axiosClient } from "../../../../utils/axios/axiosClient";
-import PostUser from "@/component/postUser/postUser";
+import PostUser from "../../../component/postUser/postUser";
 import { getPost } from "../../../../utils/data";
 import { Suspense } from "react";
 

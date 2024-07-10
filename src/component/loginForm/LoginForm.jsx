@@ -2,9 +2,18 @@
 
 import { useFormState } from "react-dom";
 import Link from "next/link";
-import { login } from "@/lib/action";
+import { login } from "../../lib/action";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 const LoginForm = () => {
   const [state, formAction] = useFormState(login, undefined);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (state?.success) {
+      router.push("/");
+    }
+  }, [state, router]);
 
   return (
     <div className=" flex justify-center items-center">
@@ -27,7 +36,7 @@ const LoginForm = () => {
           Login
         </button>
         <div className=" flex flex-col gap-4 text-white">
-          {state?.error}
+          {state?.error && <p>{state.error}</p>}
           <Link href="/register">
             {"Don't have an account?"} <b>Register</b>
           </Link>

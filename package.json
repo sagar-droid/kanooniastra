@@ -3,14 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3000",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start -p 3000",
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.1.1",
+    "aos": "^3.0.0-beta.6",
     "axios": "^1.7.2",
     "bcryptjs": "^2.4.3",
+    "clsx": "^2.1.1",
     "mongoose": "^8.0.0",
     "next": "14.2.3",
     "next-auth": "^5.0.0-beta.19",
@@ -21,7 +24,8 @@
     "react-icons": "^5.2.1",
     "react-responsive-carousel": "^3.2.23",
     "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
     "@types/node": "20.12.12",

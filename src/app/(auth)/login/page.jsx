@@ -1,5 +1,5 @@
-import LoginForm from "@/component/loginForm/LoginForm";
-import { handleGithubLogin } from "@/lib/action";
+import LoginForm from "../../../component/loginForm/LoginForm";
+import { handleGithubLogin } from "../../../lib/action";
 const LoginPage = async () => {
   return (
     <div className=" flex flex-col gap-10 justify-center items-center p-24">

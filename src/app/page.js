@@ -1,13 +1,13 @@
 import React from "react";
 import HeroComponent from "../component/home/heroComponent/HeroComponent";
-import AboutUs from "@/component/aboutUs/AboutUs";
-import Services from "@/component/services/Services";
-import TrustedBy from "@/component/trustedBy/TrustedBy";
+import AboutUs from "../component/aboutUs/AboutUs";
+import Services from "../component/services/Services";
+import TrustedBy from "../component/trustedBy/TrustedBy";
 
 const Home = () => {
   return (
     <div className=" overflow-x-hidden">
-      <HeroComponent />
+      <HeroComponent title={"kanooniastra"} />
       <AboutUs />
       <Services />
       <TrustedBy />

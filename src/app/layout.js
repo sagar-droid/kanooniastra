@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "../component/navbar/Navbar";
 import Footer from "../component/footer/Footer";
 import NextTopLoader from "nextjs-toploader";
+import Provider from "./provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,9 +25,12 @@ export default function RootLayout({ children }) {
           showSpinner={false}
           zIndex={9999999}
         />
-        <Navbar />
-        {children}
-        <Footer />
+        <Provider />
+        <>
+          <Navbar />
+          {children}
+          <Footer />
+        </>
       </body>
     </html>
   );
