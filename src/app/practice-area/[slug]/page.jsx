@@ -6,15 +6,18 @@ export default function Page({ params }) {
   );
   if (!findPracticeArea) return <div>Not Found</div>;
   return (
-    <div>
-      {/* <h1>{findPracticeArea.topic}</h1> */}
-      {findPracticeArea.subtopics.map((subtopic, index) => (
-        <div key={index} className=" flex flex-col gap-8 mb-10">
-          <h2 className=" text-2xl">{subtopic.name}</h2>
-          <div>{subtopic.description}</div>
-        </div>
-      ))}
-    </div>
+    <section className="container mt-10 mb-40 text-md">
+      <ul className="space-y-20 ">
+        {findPracticeArea.subtopics.map((subtopic, index) => (
+          <li key={subtopic.name} className="bg-white rounded-xl p-5 ">
+            <h6 className="col-span-12 bg-red-600  p-4 rounded-xl text-white w-fit text-[26px] font-bold relative bottom-14">
+              {subtopic.name}
+            </h6>
+            <p className="relative -top-4">{subtopic.description}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }
 

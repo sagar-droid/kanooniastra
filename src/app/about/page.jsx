@@ -33,16 +33,21 @@ const AboutPage = () => {
     <div className=" overflow-x-hidden">
       <HeroComponent title={"About Us"} desc={""} />
       <div className=" flex flex-col md:flex-row gap-10 p-24 ">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
-          culpa sit commodi voluptas nihil odio aspernatur numquam quisquam. At
-          id est commodi facilis labore numquam repellendus non quis praesentium
-          impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-          ut inventore velit, dolorum maiores dicta vero vel minus! Placeat
-          magni aliquam sed earum repudiandae alias eveniet necessitatibus dicta
-          nihil commodi!
-        </p>
-        <div className=" w-[100%] md:min-w-[500px]">
+        <div data-aos="fade-up" data-aos-once="true">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+            culpa sit commodi voluptas nihil odio aspernatur numquam quisquam.
+            At id est commodi facilis labore numquam repellendus non quis
+            praesentium impedit? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Rem ut inventore velit, dolorum maiores dicta vero
+            vel minus! Placeat magni aliquam sed earum repudiandae alias eveniet
+            necessitatibus dicta nihil commodi!
+          </p>
+        </div>
+        <div
+          className=" w-[100%] md:min-w-[500px]"
+          data-aos="fade-left"
+          data-aos-once="true">
           <Image
             src="https://images.unsplash.com/photo-1445294812422-0bb9cb94c286?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="about_img"
@@ -53,11 +58,15 @@ const AboutPage = () => {
           />
         </div>
       </div>
-      <div className="p-24 pb-24 bg-gray-800">
+      <div className="p-24 pb-24 bg-gray-800 text-white">
         <h1 className="text-3xl font-bold mb-12 text-center">Our Team</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {TeamData.map((data, index) => (
-            <div key={index} className="text-center">
+            <div
+              key={index}
+              className="text-center"
+              data-aos="fade-up"
+              data-aos-once="true">
               <div className="mb-4 overflow-hidden rounded-full w-52 h-52 mx-auto">
                 <Image
                   src={data.img}
@@ -68,7 +77,7 @@ const AboutPage = () => {
                 />
               </div>
               <h3 className="text-xl font-semibold mb-2">{data.name}</h3>
-              <p className="text-gray-600">{data.role}</p>
+              <p className="text-gray-300">{data.role}</p>
             </div>
           ))}
         </div>

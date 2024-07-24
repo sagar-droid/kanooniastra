@@ -23,7 +23,7 @@ const PostCard = ({ post }) => {
       </div>
       <div className=" flex flex-col">
         <h1 className=" text-xl mb-5">{post?.title}</h1>
-        <p className=" font-[300] text-gray-300 mb-5 text-justify">
+        <p className=" font-[300] text-gray-700 mb-5 text-justify">
           {post?.desc}
         </p>
         <Link href={`/blog/${post.slug}`} className=" underline">

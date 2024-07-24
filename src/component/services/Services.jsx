@@ -13,6 +13,7 @@ import {
 import { IoMdMan } from "react-icons/io";
 import {} from "react-icons/fa";
 import Link from "next/link";
+import { link } from "fs";
 
 const images = [
   {
@@ -30,7 +31,11 @@ const images = [
     practices: "Corporate Compliance",
     link: "/corporate-law",
   },
-  { image: <BsCart4 />, practices: "E-Commerce" },
+  {
+    image: <BsCart4 />,
+    practices: "Foreign Investment",
+    link: "/foreign-direct-investment",
+  },
   {
     image: <GiThunderSkull />,
     practices: "Disputes",
@@ -52,14 +57,14 @@ const images = [
     practices: "Taxation",
     link: "/taxation-laws",
   },
-  { image: <IoMdMan />, practices: "Pro bono" },
+  { image: <IoMdMan />, practices: "Criminal Law", link: "/criminal-law" },
 ];
 
 const Services = () => {
   return (
-    <section className=" p-24 flex flex-col gap-10 bg-gray-900">
+    <section className=" p-24 flex flex-col gap-10 text-white bg-gray-900">
       <div
-        className=" flex justify-center items-center text-3xl font-semibold tracking-widest uppercase"
+        className=" flex justify-center items-center text-3xl  font-semibold tracking-widest uppercase"
         data-aos="fade-up"
         data-aos-once="true">
         Practice Area

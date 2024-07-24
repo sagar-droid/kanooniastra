@@ -75,7 +75,7 @@ const Links = ({ session }) => {
             <form action={handleGithubLogout}>
               <button
                 // onClick={handleGithubLogout}
-                className=" bg-white px-2 py-2 text-red-600 cursor-pointer font-bold">
+                className=" bg-white  px-2 py-2 text-red-600 cursor-pointer font-bold">
                 Logout
               </button>
             </form>
@@ -86,12 +86,12 @@ const Links = ({ session }) => {
       </div>
       <button
         onClick={() => setOpen((prev) => !prev)}
-        className="flex md:hidden">
+        className="flex md:hidden text-white">
         <AiOutlineMenu size={25} />
       </button>
       {open && (
         <div className={`!flex !md:hidden z-[99999] ${styles.mobilelinks}`}>
-          {links.map((link) => (
+          {/* {links.map((link) => (
             <React.Fragment key={link.title}>
               <NavLink item={link} />
               {link.dropdown && (
@@ -106,7 +106,8 @@ const Links = ({ session }) => {
                 </div>
               )}
             </React.Fragment>
-          ))}
+          ))} */}
+          <h1>Hello</h1>
         </div>
       )}
     </div>

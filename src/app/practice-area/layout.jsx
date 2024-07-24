@@ -15,14 +15,14 @@ function Layout({ children }) {
   return (
     <>
       <HeroComponent title={"Practice Area"} desc={"We excel in"} />
-      <section className="container px-24  mt-10 mb-40 grid grid-cols-12 gap-x-10 text-md font-raleway ">
+      <section className="container px-24 bg- mt-10 mb-40 grid grid-cols-12 gap-x-10 text-md font-raleway ">
         {/* <h1 className="col-span-12  mt-5 mb-20 heading-2 flex justify-center items-center text-3xl text-red-600">
         Practice Area of Our Firm
         </h1> */}
         <aside className="col-span-4 body-2 ">
           <Tabs />
         </aside>
-        <div className="col-span-8  body-2 ">{children}</div>
+        <div className="col-span-8  body-2">{children}</div>
       </section>
     </>
   );

@@ -12,7 +12,7 @@ const Footer = () => {
             <Image src={logo} alt="Logo" width={150} height={50} />
           </Link>
           <div>
-            <p className=" uppercase text-xl">Kanooniastra</p>
+            <p className=" uppercase text-xl text-white">Kanooniastra</p>
             <p className=" text-gray-400">Address</p>
             <p className=" text-gray-400">Email</p>
             <p className=" text-gray-400">Contact</p>
